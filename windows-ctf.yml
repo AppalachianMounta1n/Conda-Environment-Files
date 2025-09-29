@@ -9,6 +9,7 @@ dependencies:
   - cffi
   - cryptography
   - ffmpeg
+  - geoip2
   - glib
   - libarchive
   - libcurl
@@ -54,6 +55,7 @@ dependencies:
       - mitmproxy
       - pynetcat
       - paramiko
+      - plost
       - pwntools
       - pyshark
       - python-magic-bin
@@ -65,4 +67,7 @@ dependencies:
       - stegano
       - stegcracker
       - streamlit
+      - streamlit-folium
+      - streamlit-echarts
+      - streamlit-option-menu
       - z3-solver
