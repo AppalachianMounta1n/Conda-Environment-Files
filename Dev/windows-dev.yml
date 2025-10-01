@@ -1,0 +1,107 @@
+name: dev
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # Core Python
+  - python=3.12
+  
+  # Build Tools & Compilers
+  - cmake
+  - ninja
+  - pkg-config
+  - m2-autoconf
+  - m2-automake1.15
+  - m2-libtool
+  - m2w64-gcc
+  - m2w64-gcc-fortran
+  
+  # C/C++ Toolchain (Windows compatible)
+  - clang
+  - clangxx
+  - llvm
+  - llvm-tools
+  
+  # Fortran
+  - m2w64-gcc-fortran
+  
+  # Go
+  - go=1.21
+  
+  # Rust (from conda-forge)
+  - rust
+  
+  # Zig
+  - zig
+  
+  # Java
+  - openjdk=17
+  - maven
+  - gradle
+  
+  # Python Development Tools
+  - pip
+  - setuptools
+  - wheel
+  - black
+  - mypy
+  - pylint
+  - pytest
+  - pytest-cov
+  - ipython
+  - jupyter
+  - jupyterlab
+  - notebook
+  
+  # Version Control
+  - git
+  - git-lfs
+  - pre-commit
+  
+  # Code Quality & Formatting
+  - ruff
+  - isort
+  - flake8
+  - autopep8
+  
+  # Documentation
+  - sphinx
+  - doxygen
+  
+  # Common Libraries
+  - openssl
+  - libffi
+  - zlib
+  - sqlite
+  - curl
+  - libcurl
+  
+  # Performance & Profiling
+  - psutil
+  
+  # Utilities
+  - jq
+  - vim
+  
+  # Python Scientific Stack (optional but useful)
+  - numpy
+  - pandas
+  - matplotlib
+  - scipy
+  
+  # Additional pip packages
+  - pip:
+      - poetry
+      - pipenv
+      - virtualenv
+      - tox
+      - bandit
+      - safety
+      - invoke
+      - rich
+      - typer
+      - pydantic
+      - requests
+      - httpx
+      - fastapi
+      - uvicorn
