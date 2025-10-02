@@ -29,30 +29,47 @@ A specialized environment for Capture The Flag competitions and cybersecurity re
 ## Quick Start
 
 ### Development Environment
-```bash
-# Linux/macOS
-conda env create -f Dev/linux-dev.yml
-conda activate dev
 
-# Windows
-conda env create -f Dev/windows-dev.yml
-conda activate dev
+**Linux/macOS:**
+```bash
+cd Dev
+chmod +x setup-dev.sh
+./setup-dev.sh
 ```
 
-See [Dev/README.md](Dev/README.md) for complete setup instructions.
+**Windows:**
+```powershell
+cd Dev
+.\setup-dev.ps1
+```
+
+The setup script will automatically:
+- Create/update the conda environment
+- Set up the complete Rust toolchain
+- Test all language installations
+
+See [Dev/README.md](Dev/README.md) for details.
 
 ### CTF Environment
-```bash
-# Linux/macOS
-conda env create -f CTF/linux-ctf.yml
-conda activate ctf
 
-# Windows
-conda env create -f CTF/windows-ctf.yml
-conda activate ctf
+**Linux/macOS:**
+```bash
+cd CTF
+chmod +x setup-ctf.sh
+./setup-ctf.sh
 ```
 
-See [CTF/README.md](CTF/README.md) for complete setup instructions.
+**Windows:**
+```powershell
+cd CTF
+.\setup-ctf.ps1
+```
+
+The setup script will automatically:
+- Create/update the conda environment
+- Test all CTF tools
+
+See [CTF/README.md](CTF/README.md) for details.
 
 ---
 
@@ -122,12 +139,16 @@ Conda-Environment-Files/
 │   ├── README.md                       # Development environment documentation
 │   ├── linux-dev.yml                   # Linux development environment
 │   ├── windows-dev.yml                 # Windows development environment
-│   ├── setup-rust-tools.sh             # Linux/macOS Rust setup script
-│   └── setup-rust-tools.ps1            # Windows Rust setup script
+│   ├── setup-dev.sh                    # Automated setup script (Linux/macOS)
+│   ├── setup-dev.ps1                   # Automated setup script (Windows)
+│   ├── setup-rust-tools.sh             # Rust toolchain setup (Linux/macOS)
+│   └── setup-rust-tools.ps1            # Rust toolchain setup (Windows)
 └── CTF/
     ├── README.md                       # CTF environment documentation
     ├── linux-ctf.yml                   # Linux CTF environment
-    └── windows-ctf.yml                 # Windows CTF environment
+    ├── windows-ctf.yml                 # Windows CTF environment
+    ├── setup-ctf.sh                    # Automated setup script (Linux/macOS)
+    └── setup-ctf.ps1                   # Automated setup script (Windows)
 ```
 
 ---
