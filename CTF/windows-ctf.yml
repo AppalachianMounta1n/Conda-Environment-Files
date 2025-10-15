@@ -71,4 +71,3 @@ dependencies:
       - streamlit-echarts
       - streamlit-option-menu
       - z3-solver
-      - fpylll
