@@ -72,3 +72,4 @@ dependencies:
       - streamlit-option-menu
       - z3-solver
       - fpylll
+      - numba

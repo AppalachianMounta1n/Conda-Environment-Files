@@ -118,3 +118,4 @@ dependencies:
       - fastapi
       - uvicorn
       - fpylll
+      - numba
