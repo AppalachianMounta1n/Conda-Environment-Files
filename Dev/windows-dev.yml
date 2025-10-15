@@ -105,3 +105,4 @@ dependencies:
       - httpx
       - fastapi
       - uvicorn
+      - fpylll
